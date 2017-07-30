@@ -20,6 +20,10 @@ body {
   width: 100%;
 }
 
+.cover-photo {
+
+}
+
 .header-section {
   display: flex;
 }
@@ -35,6 +39,10 @@ body {
   flex-wrap: wrap;
 }
 
+.col-4 {
+  width: 33.33%;
+}
+
 .col-6 {
   width: 50%;
 }
@@ -48,6 +56,10 @@ body {
   padding-top: 30px;
 }
 
+.featured-work {
+  font-size: 30px;
+}
+
 .responsive-container {
   width: 100%;
   max-width: 1280px;
@@ -57,10 +69,29 @@ body {
   overflow: hidden;
 }
 
-h1, h3 {
+h1 {
   text-transform: uppercase;
 }
 
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.first-project {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.project-work {
+  max-width: 100%;
+}
+
+.projects {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
 /*Media Queries*/
 @media screen and (max-width: 412px) {
   .logo {

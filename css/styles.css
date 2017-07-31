@@ -10,7 +10,27 @@
   display: inline-block;
   font-family: 'zocial', sans-serif;
   text-shadow: 3px 3px 3px #aaa;
-  width: 2em;
+  width: 5em;
+}
+
+footer {
+  background-color: #ddd;
+  margin-bottom: 0;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+
+}
+
+.front-end-title {
+  text-align: right;
+}
+
+footer ul li {
+  display: inline-flex;
+  margin: 20px;
 }
 
 body {
@@ -69,19 +89,31 @@ body {
   overflow: hidden;
 }
 
+.portfolio-project {
+  margin: 5px;
+}
+
 h1 {
   text-transform: uppercase;
 }
 
+p{
+  text-align: center;
+}
+
 h3 {
   text-transform: uppercase;
-  text-align: center;
   font-size: 1.5em;
 }
 
 .first-project {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.third-project {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .project-work {
@@ -91,17 +123,22 @@ h3 {
 .projects {
   display: inline-flex;
   flex-wrap: nowrap;
+  text-align: center;
 }
 /*Media Queries*/
 @media screen and (max-width: 412px) {
   .logo {
     width: 100%;
-    padding-left: 8px;
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 0;
   }
 
-  .main-title {
+  .front-end-title {
+    text-align: center;
+  }
+
+  .person-title {
     width: 100%;
     text-align: center;
     padding: 0;
@@ -110,6 +147,27 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  .col-4 {
+    width: 100%;
+  }
 
+  .projects {
+    flex-flow: column;
+  }
 
+  .portfolio-project {
+    width: 100%;
+  }
+
+  .project-work {
+    width: 100%;
+  }
+
+  .first-project {
+    padding: 0px;
+  }
+
+  .third-project {
+    padding: 0px;
+  }
 }

@@ -101,6 +101,10 @@ p{
   text-align: center;
 }
 
+.project-name {
+  vertical-align: bottom;
+}
+
 h3 {
   text-transform: uppercase;
   font-size: 1.5em;
